@@ -46,6 +46,7 @@ body{
     justify-content: space-around;
     position: absolute;
     width: 100%;
+    user-select: none;
     button{
         outline: none;
         border: none;
@@ -75,5 +76,4 @@ body{
 .next.disabled{
     pointer-events: none;
     opacity: 0.4;
-    user-select: none;
 }

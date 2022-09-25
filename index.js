@@ -3,7 +3,7 @@ let prev = document.querySelector('.prev')
 
 let imageContainer = document.querySelector('.images')
 
-for(let i = 1; i <= 5 ; i++){
+for(let i = 1; i <= 19 ; i++){
     console.log(i)
     imageContainer.innerHTML += `
         <div class="slides">
@@ -30,7 +30,7 @@ prev.disabled = true
 function carousel(){
     console.log(counter)
     console.log('fasd')
-    if(counter >= 4){
+    if(counter >= 18){
         next.classList.add('disabled')
         prev.disabled = false
     }

@@ -79,6 +79,10 @@ body {
       justify-content: space-around;
   position: absolute;
   width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .buttons button {
@@ -103,9 +107,5 @@ body {
 .next.disabled {
   pointer-events: none;
   opacity: 0.4;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 /*# sourceMappingURL=style.css.map */
