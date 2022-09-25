@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    
+}
+.title{
+    font-family: "Inter Tight",sans-serif;
+    text-align: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.slider-container{
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.images{
+    display: flex;
+    align-items: center;
+    width: max-content;
+    .slides{
+        transition: .5s;
+        padding-inline: 100px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+        img{
+            width: 80vw;
+            border-radius: 10px;
+        }
+    }
+}    
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    button{
+        outline: none;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .images{
+        .slides{
+            padding-inline: 70px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    .images{
+        .slides{
+            padding-inline: 50px;
+        }
+    }
+}
+
+
+.next.disabled{
+    pointer-events: none;
+    opacity: 0.4;
+    user-select: none;
+}
